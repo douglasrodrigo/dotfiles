@@ -1,0 +1,16 @@
+[user]
+        name = Douglas Rodrigo Ferreira
+        email = douglasrodrigo@gmail.com
+
+[core]
+        editor = emacs
+
+[push]
+        default = matching
+
+[alias]
+        br = branch
+        cm = commit
+        co = checkout
+        st = status
+        update = !sh -c \"git fetch && git rebase origin/$(git symbolic-ref HEAD | sed -e \"s,.*/\\(.*\\),\\1,\")\"
